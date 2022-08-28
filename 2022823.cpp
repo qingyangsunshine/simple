@@ -1,8 +1,17 @@
-//转义字符的输出
 #include<stdio.h>
+
 int main()
 {
-	printf("printf(\"Hello World!\\n\");\n");
-	printf("cout<<\"Hello World!\"<< end1;");
+	int a=1;
+	char *p=(char *)&a;
+	if(*p==1)
+	{
+		printf("小端\n");
+	}
+	else
+	{
+		printf("大端\n");
+	}
+
 	return 0;
 }
